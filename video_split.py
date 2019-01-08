@@ -7,7 +7,7 @@ def extractImage(source, destination, step):
     count = 0
     vidcap = cv2.VideoCapture(source)
     success, image = vidcap.read()
-    
+
     while success:
         vidcap.set(cv2.CAP_PROP_POS_MSEC, (count * step * 1000))
         cv2.imwrite(destination + "/frame%d.jpg" % count, image)
