@@ -5,13 +5,8 @@ import boto3
 def extractText(source, destination):
     client = boto3.client('rekognition')
 
-
-    # name = 'frame24.jpg'
-    # response = client.detect_text(Image={'S3Object': {'Bucket': source, 'Name': name}})
-    #
-
-
-
+    name = 'frame24.jpg'
+    response = client.detect_text(Image={'S3Object': {'Bucket': source, 'Name': name}})
     textDetection = response['TextDetections']
     print(response)
     print('Detected text')
