@@ -2,7 +2,8 @@
 
 ## Detecting Text using Rekognition and Textrack
 
-A word is one or more ISO basic Latin script characters that aren't separated by spaces. DetectText can detect up to 50 words in an image.
+A word is one or more ISO basic Latin script characters that aren't separated by spaces. 
+DetectText can detect up to 50 words in an image.
 
 This is proof of concept to show how Rekognition and Textract perform
 text extraction from image files.
